@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.prodGallery {
+    width: 248px;
+    height: 65px;
+    margin: 4px auto;
+    position: relative;
+    &-overflow {
+        overflow: hidden;
+    }
+    &-images {
+        display: flex;
+        transition: transform 0.3s;
+    }
+
+    picture {
+        border-radius: 20%;
+        img {
+            height: 60px;
+            width: 57px;
+            padding: 2px;
+            margin: 0 2px;
+            object-fit: cover;
+            flex: 0 0 calc(25% - 4px);
+            border-radius: 20%;
+            transition: border 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    &-controls {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        position: absolute;
+        left: -37px;
+        top: 9px;
+        cursor: pointer;
+        &__arrowRight {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .prodGallery {
+        &-overflow {
+            width: 220px;
+            margin: 0 auto;
+        }
+        &-controls {
+            width: 289px;
+            left: -21px;
+        }
+    }
+}

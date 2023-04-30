@@ -1,0 +1,27 @@
+/////////////////// variables
+$fontFamily: "RobotoSlab", sans-serif;
+$fontSize: 16;
+$fontColor: white;
+$backColor: #f4c1b2;
+$activeColor: #ff4656;
+$allTextShadow: 1px 1px 3px black;
+$containerWidth: 1440;
+
+//////////////////// animations
+@keyframes emerging {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dissolving {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

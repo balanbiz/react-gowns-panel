@@ -1,0 +1,66 @@
+.prodModal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    animation: emerging 0.3s linear forwards;
+    &_close {
+        animation: dissolving 0.3s linear forwards;
+    }
+    &__half {
+        &-left,
+        &-right {
+            position: absolute;
+            width: 50%;
+            top: 0;
+            height: 100%;
+        }
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
+    }
+    &__wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    &-img {
+        &-wrap {
+            position: relative;
+            transition: all 0.3s ease-in;
+            margin: 0 auto;
+            &-back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: 0 0/100% 100% no-repeat;
+                border: 4px solid rgb(255, 255, 255);
+                cursor: pointer;
+                transition: background-image 0.3s ease-in;
+            }
+        }
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-svg {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+}

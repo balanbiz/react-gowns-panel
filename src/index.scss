@@ -1,0 +1,130 @@
+@import "./fonts/Fonts.scss";
+@import "./components/variables.scss";
+/////////////////// nullify diffrent browsers settings
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    // outline: none;
+}
+a:focus,
+a:active {
+    // outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+html {
+    font-size: #{$fontSize + px};
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    font-family: $fontFamily;
+    //text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: $fontFamily;
+    font-size: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+    background-color: inherit;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+//-webkit-overflow-scrolling: touch;
+//animation-play-state: paused !important;
+
+//////////////// main settings
+
+body {
+    background-color: $backColor;
+    color: $fontColor;
+    text-shadow: $allTextShadow;
+    user-select: none;
+}
+
+.container {
+    max-width: $containerWidth + px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 420px) {
+        padding: 0 6px;
+    }
+}
+
+section {
+    padding: 15px 0;
+}
+
+h2 {
+    font-size: 32px;
+    @media (max-width: 620px) {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    font-size: 25px;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

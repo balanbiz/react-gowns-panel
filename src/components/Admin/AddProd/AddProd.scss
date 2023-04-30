@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+
+.addProd {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    &-form__wrap {
+        display: flex;
+        padding: 5px 10px;
+        * {
+            padding: 0 7px;
+        }
+        &-file {
+            color: black;
+        }
+    }
+    &__colours {
+        &-header {
+            font-size: 18px;
+            padding: 10px;
+            text-align: left;
+        }
+        &-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &__colour {
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+        * {
+            margin: 5px 0;
+        }
+    }
+    &-sizes {
+        label {
+            display: block;
+            font-size: 20px;
+            padding: 8px;
+        }
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            * {
+                padding: 5px;
+            }
+        }
+        input {
+            display: block;
+            width: 18px;
+            height: 18px;
+            margin: 7px;
+        }
+    }
+
+    &-size {
+        input {
+            width: 18px !important;
+        }
+    }
+
+    input {
+        width: 100%;
+    }
+    &-button {
+        padding: 5px;
+        border: 3px solid black;
+        border-radius: 15px;
+        &:hover {
+            border: 3px solid $activeColor;
+        }
+    }
+}

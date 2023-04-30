@@ -1,0 +1,25 @@
+.footer {
+    &__images {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            max-width: 472px;
+            max-height: 340px;
+            margin: 10px 0;
+            object-fit: contain;
+            padding: 0 5px;
+        }
+        .img-cover {
+            object-fit: cover;
+        }
+    }
+    p {
+        font-size: 28px;
+        text-shadow: 2px 2px 2px black;
+    }
+}

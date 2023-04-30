@@ -1,0 +1,60 @@
+@import "../variables.scss";
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0;
+    animation: emerging 1s linear 2s forwards;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+        a,
+        .header-logo {
+            padding: 7px 10px 0px 10px;
+            color: $backColor;
+            &:hover {
+                color: $activeColor;
+            }
+        }
+    }
+    &-logo {
+        font-size: 36px;
+        letter-spacing: 3px;
+        font-weight: 300;
+        padding-left: 17px !important;
+        .logo-5 {
+            position: absolute;
+            top: 8px;
+            left: -19px;
+            margin-top: 5px;
+        }
+        .logo-58 {
+            margin-right: -9px;
+            position: relative;
+        }
+        img {
+            width: 17px;
+            height: 15px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .header {
+        &-side {
+            display: flex;
+            flex-direction: column;
+            font-size: 17px;
+        }
+        &-logo {
+            font-size: 17px;
+            .logo-5 {
+                top: 4px;
+                left: -9px;
+            }
+        }
+    }
+}

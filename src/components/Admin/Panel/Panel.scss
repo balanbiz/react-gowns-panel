@@ -1,0 +1,10 @@
+.pnl {
+    position: relative;
+    height: 45px;
+    text-align: center;
+    z-index: 1000;
+    &-out {
+        border: 1px solid red;
+    }
+    z-index: 1000;
+}

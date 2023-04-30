@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.products {
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 5px;
+        align-items: center;
+    }
+    &__descr {
+        font-weight: 300;
+        margin: 10px 0;
+        text-shadow: 1px 1px 2px black;
+    }
+    &__loadMore {
+        display: block;
+        margin: 0 auto;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 2px solid $activeColor;
+        padding: 4px 10px;
+        text-shadow: none;
+        border-radius: 15px;
+        transition: all 0.3s;
+        &:hover {
+            color: white;
+            background-color: $activeColor;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .products {
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+    }
+}

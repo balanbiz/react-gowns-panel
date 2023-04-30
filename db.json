@@ -1,0 +1,25 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "2",
+            "images": [
+                {
+                    "nowebp": "./assets/2/5-161_westbloom_куртка_купить_пальто.jpeg",
+                    "webp": "./assets/2/5-161_westbloom_куртка_купить_пальто.webp"
+                },
+                {
+                    "nowebp": "./assets/2/5-161_westbloom_куртка_купить_пальто_2.jpeg",
+                    "webp": "./assets/2/5-161_westbloom_куртка_купить_пальто_2.webp"
+                }
+            ],
+            "price": 2,
+            "related": {
+                "default": [],
+                "Серый": ["40", "42"],
+                "Рыжий": ["44", "46"]
+            },
+            "likes": 0
+        }
+    ]
+}
